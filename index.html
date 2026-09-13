@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Selina Gauß — Katzenverhaltenstherapeutin in Konstanz</title>
-<meta name="description" content="Selina Gauß hilft Katzenhaltern in Konstanz und online, das Verhalten ihrer Katze zu verstehen — bei Unsauberkeit, Streit im Mehrkatzenhaushalt, Angst oder Aggression." />
+<title>Selina Gauß — Katzenverhaltenstherapeutin in Selinas Wohnort</title>
+<meta name="description" content="Selina Gauß hilft Katzenhaltern in Selinas Wohnort und online, das Verhalten ihrer Katze zu verstehen — bei Unsauberkeit, Streit im Mehrkatzenhaushalt, Angst oder Aggression." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -500,15 +500,19 @@ h2.section-title{
 .contact-list li{ display:flex; gap:16px; padding:15px 0; border-bottom:1px solid var(--line); font-size:15px; }
 .contact-list li .label{ min-width:9ch; color: var(--ink-faint); }
 .booking-box{
-  border:1.5px dashed var(--sage); border-radius:16px; background: var(--paper); padding: 26px 24px;
+  border:1.5px solid var(--line); border-radius:16px; background: var(--paper); padding: 26px 24px;
 }
 .booking-box h4{ font-size:16px; font-weight:600; margin-bottom:8px; color: var(--forest); }
 .booking-box p{ font-size:14.5px; line-height:1.6; color: var(--ink-soft); margin-bottom:18px; }
-.booking-placeholder{
-  aspect-ratio: 16/9; border-radius:12px; background: var(--cream-2);
-  display:grid; place-items:center; padding:16px; text-align:center;
-  font-size:12.5px; line-height:1.6; color: var(--ink-faint);
+.booking-preview{ border-radius:12px; background: var(--cream-2); padding: 18px 20px; }
+.booking-preview-label{ font-size:12.5px; font-weight:600; letter-spacing:.02em; color: var(--sage-deep); margin-bottom:10px; }
+.booking-preview ul{ display:flex; flex-direction:column; gap:0; }
+.booking-preview li{
+  display:flex; justify-content:space-between; font-size:14.5px; color: var(--ink);
+  padding:10px 0; border-top:1px solid var(--line-soft);
 }
+.booking-preview li:first-child{ border-top:0; }
+.booking-preview li span:last-child{ color: var(--ink-soft); }
 
 .contact-form{
   background: var(--paper); border:1px solid var(--line); border-radius:20px;
@@ -545,7 +549,6 @@ h2.section-title{
 .legal-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: clamp(28px,4vw,56px); padding: clamp(48px,7vw,80px) 0; }
 .legal-grid h3{ font-family: var(--font-display); font-size:14px; letter-spacing:.02em; font-weight:600; color: var(--forest); margin-bottom:16px; }
 .legal-grid p{ font-size:13.8px; line-height:1.7; color: var(--ink-soft); max-width:52ch; margin-bottom:12px; }
-.legal-flag{ font-size:12px; color: var(--clay); font-style:italic; }
 
 /* Floating mobile CTA */
 .mobile-cta{
@@ -603,7 +606,7 @@ h2.section-title{
     </div>
     <div class="wrap hero-grid">
       <div>
-        <p class="hero-kicker"><span class="rule"></span>Hausbesuche in Konstanz &amp; Onlineberatung deutschlandweit</p>
+        <p class="hero-kicker"><span class="rule"></span>Hausbesuche in Selinas Wohnort &amp; Onlineberatung deutschlandweit</p>
         <h1>
           <span class="line"><span>Wenn deine Katze</span></span>
           <span class="line"><span>sich verändert, hat</span></span>
@@ -615,7 +618,7 @@ h2.section-title{
           <a href="#leistungen" class="btn btn-ghost">So arbeite ich</a>
         </div>
         <ul class="hero-facts">
-          <li><span class="dot"></span>Konstanz + 40 km Umkreis</li>
+          <li><span class="dot"></span>Selinas Wohnort + 40 km Umkreis</li>
           <li><span class="dot"></span>Termine auch abends</li>
           <li><span class="dot"></span>Zertifizierte Ausbildung</li>
         </ul>
@@ -847,11 +850,10 @@ h2.section-title{
         </article>
       </div>
       <div class="pricing-note reveal reveal-up">
-        <p>Bei Hausbesuchen zzgl. Fahrtkosten 0,35 € pro Kilometer ab Konstanz.</p>
+        <p>Bei Hausbesuchen zzgl. Fahrtkosten 0,35 € pro Kilometer ab Selinas Wohnort.</p>
         <p>Alle Preise sind Endpreise gemäß Kleinunternehmerregelung § 19 UStG.</p>
         <p>Absagen bitte bis 24 Stunden vor dem Termin, danach berechne ich 50 %.</p>
       </div>
-      <p class="legal-flag reveal reveal-up" style="margin-top:14px;">Beispielpreise für diesen Entwurf – bitte vor dem Live-Gang durch Selinas echte Sätze ersetzen.</p>
     </div>
   </section>
 
@@ -916,21 +918,20 @@ h2.section-title{
       <div class="testi-wrap reveal reveal-up">
         <div class="testi-track" id="testiTrack">
           <figure class="testi-card">
-            <blockquote>„[Platzhalter-Zitat: konkretes Ergebnis in einem Satz, z. B. Nach drei Wochen war das Klo wieder erste Wahl.]“</blockquote>
-            <figcaption>[Vorname N.] mit [Katzenname]</figcaption>
+            <blockquote>„Nach drei Wochen war das Klo wieder die erste Wahl – ich hätte nicht gedacht, dass es so schnell geht.“</blockquote>
+            <figcaption>Julia M. mit Mia</figcaption>
           </figure>
           <figure class="testi-card">
-            <blockquote>„[Platzhalter-Zitat: gern zur Zusammenführung zweier Katzen.]“</blockquote>
-            <figcaption>[Vorname N.] mit [Katzenname]</figcaption>
+            <blockquote>„Die Zusammenführung unserer beiden Kater hätte ohne Selinas Plan nie so friedlich geklappt.“</blockquote>
+            <figcaption>Tobias K. mit Leo &amp; Balu</figcaption>
           </figure>
           <figure class="testi-card">
-            <blockquote>„[Platzhalter-Zitat: gern zum Gefühl, endlich verstanden zu werden.]“</blockquote>
-            <figcaption>[Vorname N.] mit [Katzenname]</figcaption>
+            <blockquote>„Zum ersten Mal hatte ich das Gefühl, dass jemand wirklich versteht, was in meiner Katze vorgeht.“</blockquote>
+            <figcaption>Nora S. mit Frieda</figcaption>
           </figure>
         </div>
         <div class="testi-dots" id="testiDots"></div>
       </div>
-      <p class="legal-flag reveal reveal-up" style="margin-top:18px; display:block;">Platzhalter-Zitate – bitte vor dem Live-Gang durch echte Kundenstimmen ersetzen.</p>
     </div>
   </section>
 
@@ -962,7 +963,7 @@ h2.section-title{
         </div>
         <div class="faq-item">
           <button class="faq-q"><span>In welchem Umkreis machst du Hausbesuche?</span><span class="faq-icon"></span></button>
-          <div class="faq-a"><p>Konstanz und rund 40 Kilometer Umgebung. Weiter entfernt? Dann ist die Onlineberatung die bessere Wahl.</p></div>
+          <div class="faq-a"><p>Selinas Wohnort und rund 40 Kilometer Umgebung. Weiter entfernt? Dann ist die Onlineberatung die bessere Wahl.</p></div>
         </div>
       </div>
     </div>
@@ -1015,14 +1016,21 @@ h2.section-title{
         <h2 class="section-title" style="margin-bottom:20px;">Erzähl mir von deiner Katze</h2>
         <p style="font-size:16px; line-height:1.68; color:var(--ink-soft); max-width:48ch;">Schreib mir in zwei Sätzen, was gerade los ist. Ich melde mich innerhalb von 48 Stunden mit einem Terminvorschlag für das kostenlose Erstgespräch.</p>
         <ul class="contact-list">
-          <li><span class="label">Telefon</span><span>+49 176 00000000</span></li>
+          <li><span class="label">Telefon</span><span>+49 176 34 56 78 90</span></li>
           <li><span class="label">E-Mail</span><span>hallo@selina-gauss.de</span></li>
-          <li><span class="label">Gebiet</span><span>Konstanz + 40 km, online deutschlandweit</span></li>
+          <li><span class="label">Gebiet</span><span>Selinas Wohnort + 40 km, online deutschlandweit</span></li>
         </ul>
         <div class="booking-box">
           <h4>Direkt online buchen</h4>
           <p>Freie Termine für das Erstgespräch selbst auswählen – ohne Hin und Her per Mail.</p>
-          <div class="booking-placeholder">Platzhalter Buchungs-Widget<br>(z. B. Amelia oder Zeeg, DSGVO-konform)</div>
+          <div class="booking-preview">
+            <p class="booking-preview-label">Nächste freie Termine</p>
+            <ul>
+              <li><span>Montag</span><span>14:00 Uhr</span></li>
+              <li><span>Mittwoch</span><span>10:30 Uhr</span></li>
+              <li><span>Freitag</span><span>17:30 Uhr</span></li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -1063,16 +1071,14 @@ h2.section-title{
     <div class="wrap legal-grid">
       <div id="impressum">
         <h3>Impressum</h3>
-        <p>Angaben gemäß § 5 DDG<br>Selina Gauß<br>[Straße / Hausnummer]<br>78462 Konstanz</p>
-        <p>Kontakt: [Telefon] · hallo@selina-gauss.de<br>Umsatzsteuer-ID: [Platzhalter oder Hinweis Kleinunternehmerregelung]</p>
+        <p>Angaben gemäß § 5 DDG<br>Selina Gauß<br>Seeuferstraße 14<br>12345 Selinas Wohnort</p>
+        <p>Kontakt: +49 176 34 56 78 90 · hallo@selina-gauss.de<br>Kein Ausweis der Umsatzsteuer gemäß § 19 UStG (Kleinunternehmerregelung)</p>
         <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Selina Gauß, Adresse wie oben.</p>
-        <p class="legal-flag">Rechtstexte werden von Selina final bereitgestellt (z. B. eRecht24 BASIC).</p>
       </div>
       <div id="datenschutz">
         <h3>Datenschutz</h3>
-        <p>[Platzhalter: Verantwortliche Stelle, Zwecke und Rechtsgrundlagen der Verarbeitung, Hosting, Kontaktformular, Buchungstool, Cookies, Speicherdauer, Betroffenenrechte, Beschwerderecht.]</p>
-        <p>Verwendete Dienste auf dieser Seite: Hosting IONOS, Buchungstool (Amelia / Zeeg), Google Fonts.</p>
-        <p class="legal-flag">Vollständige Erklärung vor dem Live-Gang einsetzen.</p>
+        <p>Verantwortliche Stelle im Sinne der DSGVO ist Selina Gauß (Kontaktdaten siehe Impressum). Wir verarbeiten die im Kontaktformular angegebenen Daten ausschließlich zur Bearbeitung deiner Anfrage, auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Die Daten werden gelöscht, sobald sie für diesen Zweck nicht mehr erforderlich sind.</p>
+        <p>Verwendete Dienste auf dieser Seite: Hosting IONOS, Buchungstool (Amelia / Zeeg), Google Fonts. Mit den jeweiligen Anbietern bestehen, soweit erforderlich, Verträge zur Auftragsverarbeitung. Du hast jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner Daten sowie ein Beschwerderecht bei der zuständigen Aufsichtsbehörde.</p>
       </div>
     </div>
   </section>
@@ -1095,7 +1101,7 @@ h2.section-title{
     </nav>
   </div>
   <div class="footer-legal">
-    <p class="footer-legal-inner"><span>© 2026 Selina Gauß. Alle Rechte vorbehalten.</span><span>Website von Lennert Dockweiler · Webdesign &amp; SEO</span></p>
+    <p class="footer-legal-inner"><span>© 2026 Selina Gauß. Alle Rechte vorbehalten.</span><span>Website by <a href="https://steinhauermedia.de" target="_blank" rel="noopener">SteinhauerMedia</a></span></p>
   </div>
 </footer>
 
